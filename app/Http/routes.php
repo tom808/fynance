@@ -11,9 +11,24 @@
 |
 */
 
+use App\User;
+
 Route::get('/', 'WelcomeController@index');
 
 Route::get('home', 'HomeController@index');
+/*
+Route::get('account', function() {
+
+    $users = DB::table('users')->get();
+
+    return $users;
+
+
+});
+
+*/
+
+Route::get('account', 'AccountController@getOverView');
 
 Route::controllers([
 	'auth' => 'Auth\AuthController',

@@ -3782,7 +3782,6 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar {
   position: relative;
   min-height: 50px;
-  margin-bottom: 20px;
   border: 1px solid transparent;
 }
 @media (min-width: 768px) {
@@ -3792,7 +3791,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 @media (min-width: 768px) {
   .navbar-header {
-    float: left;
+      text-align: center;
   }
 }
 .navbar-collapse {
@@ -3892,6 +3891,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   font-size: 18px;
   line-height: 20px;
   height: 50px;
+  font-family: Giddyup Std;
+  font-size: xx-large;
 }
 .navbar-brand:hover,
 .navbar-brand:focus {
@@ -5979,9 +5980,7 @@ button.close {
 .navbar-collapse:after,
 .pager:after,
 .panel-body:after,
-.modal-footer:after {
-  clear: both;
-}
+
 .center-block {
   display: block;
   margin-left: auto;
