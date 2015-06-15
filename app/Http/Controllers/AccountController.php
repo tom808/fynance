@@ -14,7 +14,7 @@ class AccountController extends Controller {
 
     public function getOverView()
     {
-        return view('account.overview');
+        return view('account.overview')->with('user_name','Tom');
     }
 
 }
