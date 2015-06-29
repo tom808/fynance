@@ -39,8 +39,14 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-12">
-                        <h1>Hello {{ $user_name }}</h1>
-                        <p>This is the main account page overview. It will show current balance and a list of recent transactions</p>
+                        <h1>Hello!<h1>
+                        <p>Please select an account from below:</p>
+                        @foreach($accounts as $account)
+
+                            <li> {{ $account->name }}</li>
+
+                        @endforeach
+
                         <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>
                     </div>
                 </div>

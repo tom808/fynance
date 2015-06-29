@@ -11,23 +11,12 @@
 |
 */
 
-use \App\UserAccount;
-use \App\Account;
+use App\UserAccount;
+use App\Account;
 
 Route::get('/', 'WelcomeController@index');
 
 Route::get('home', 'HomeController@index');
-/*
-Route::get('account', function() {
-
-    $users = DB::table('users')->get();
-
-    return $users;
-
-});
-
-*/
-
 //Route::get('account', 'AccountController@getOverView');
 
 Route::get('overview/{user_id}', function($user_id) {

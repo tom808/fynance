@@ -4,6 +4,7 @@ use Exception;
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
 use Illuminate\Support\Facades\Config;
 
+
 class Handler extends ExceptionHandler {
 
 	/**
