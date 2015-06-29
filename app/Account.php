@@ -1,4 +1,4 @@
-<?php
+<?php namespace App;
 /**
  * Created by: tom
  * Date: 15/06/15
@@ -12,9 +12,9 @@ class Account extends Model {
 
     protected $fillable = ['name', 'balance'];
 
-    public function users() {
+    public function user() {
 
-        return $this->hasMany('App\User');
+        return $this->hasOne('app\User');
     }
 
 } 

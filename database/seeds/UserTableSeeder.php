@@ -18,8 +18,8 @@ class UserTableSeeder extends Seeder
                 'name' => 'Tom',
                 'email' => 'tom@fynance.com',
                 'password' => Hash::make('secret'),
-                'created_at' => gmdate("Y-m-d\TH:i:s\Z", time()),
-                'updated_at' => gmdate("Y-m-d\TH:i:s\Z", time())
+                'created_at' =>  date('Y-m-d G:i:s',time()),
+                'updated_at' => date('Y-m-d G:i:s',time())
             ]
         );
 

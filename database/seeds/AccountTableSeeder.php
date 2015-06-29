@@ -16,9 +16,9 @@ class AccountTableSeeder extends Seeder
             [
                 'id' => 1,
                 'name' => 'MainAccount',
-                'balance' => 0.00,
-                'created_at' => gmdate("Y-m-d\TH:i:s\Z", time()),
-                'updated_at' => gmdate("Y-m-d\TH:i:s\Z", time())
+                'balance' => 1240.00,
+                'created_at' => date('Y-m-d G:i:s',time()),
+                'updated_at' => date('Y-m-d G:i:s',time())
             ]
         );
 

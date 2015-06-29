@@ -11,7 +11,8 @@
 |
 */
 
-use App\User;
+use \App\UserAccount;
+use \App\Account;
 
 Route::get('/', 'WelcomeController@index');
 
@@ -23,12 +24,20 @@ Route::get('account', function() {
 
     return $users;
 
-
 });
 
 */
 
-Route::get('account', 'AccountController@getOverView');
+//Route::get('account', 'AccountController@getOverView');
+
+Route::get('overview/{user_id}', function($user_id) {
+
+        $user_accounts = UserAccount::where('user_id',$user_id)->get();
+        $accounts = Account::where('id',$user_accounts->lists('account_id'))->get();
+
+        return view('account.overview', ['accounts' => $accounts]);
+
+});
 
 Route::controllers([
 	'auth' => 'Auth\AuthController',
